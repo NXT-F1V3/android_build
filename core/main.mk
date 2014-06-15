@@ -103,6 +103,9 @@ include $(BUILD_SYSTEM)/cleanbuild.mk
 # Include the google-specific config
 -include vendor/google/build/config.mk
 
+# Include NXT5 specific config
+-include vendor/nxt5/common.mk
+
 VERSION_CHECK_SEQUENCE_NUMBER := 3
 -include $(OUT_DIR)/versions_checked.mk
 ifneq ($(VERSION_CHECK_SEQUENCE_NUMBER),$(VERSIONS_CHECKED))
